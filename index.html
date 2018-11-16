@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=0.5, minimal-ui">
+    <title>Animal sounds</title>
+    <!--Style Sheet link-->
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+<body>
+  <h1><em>Animal Sounds</em><br>Click on the animals</h1>
+  <!--Buttons-->
+  <a href="javascript:tiger();"><img src="img/1.png" alt="tiger"></a>
+  <a href="javascript:elephant();"><img src="img/3a.png" alt="elephant"></a>
+  <a href="javascript:bear();"><img src="img/4.png" alt="bear"></a>
+  <a href="javascript:zebra();"><img src="img/5.png" alt="zebra"></a>
+
+  <!--Audio Files-->
+  <audio id="tigerSound" src="sounds/tiger.mp3" preload="tiger"></audio>
+  <audio id="elephantSound" src="sounds/elephant.mp3" preload="elephant"></audio>
+  <audio id="bearSound" src="sounds/bearsound.mp3" preload="bear"></audio>
+  <audio id="zebraSound" src="sounds/zebra.mp3" preload="zebra"></audio>
+
+  <!--Javascript-->
+  <script type="text/javascript">
+    function tiger() {
+      document.getElementById('tigerSound').play();
+    }
+    function elephant() {
+      document.getElementById('elephantSound').play();
+    }
+    function bear() {
+      document.getElementById('bearSound').play();
+    }
+    function zebra() {
+      document.getElementById('zebraSound').play();
+    }
+  </script>
+</body>
+</html>
